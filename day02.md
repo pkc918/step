@@ -22,7 +22,7 @@
 
 ### 词汇
 
-**10 个变成高频词汇**
+**10 个编程高频词汇**
 
 - Class（类）
   - `A class defines a blueprint for objects.` 类定义了对象的蓝图
