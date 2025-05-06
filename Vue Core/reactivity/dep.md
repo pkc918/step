@@ -1,3 +1,14 @@
+ts小技巧：共有属性可以直接在class的constructor中定义，参考Link源码
+```ts
+class Link {
+    constructor(
+        public sub
+    )
+}
+
+(new Link).sub
+```
+
 ```ts
 class Dep{
 
