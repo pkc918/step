@@ -42,6 +42,8 @@ class RefImpl<T = any> {
             this._rawValue = newValue // 如果更新的值有变化，就更新原始对象值
             // 更新当前值，如果是 shallow readonly 直接更新值，如果不是，那就转一个 代理对象
             this._value = useDirectValue ? newValue : toReactive(newValue) // toReactive 返回了一个代理对象
+
+            this.dep.trigger()
         }
     }
 }
