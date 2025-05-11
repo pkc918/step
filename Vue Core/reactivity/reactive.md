@@ -60,7 +60,7 @@ mutableCollectionHandlers = {
     
     set(target, key, value, receiver){ 
         const result = Reflect.set(
-            target, 
+            target,
             key, 
             value, 
             isRef(target) ? target : receiver
